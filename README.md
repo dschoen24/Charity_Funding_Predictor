@@ -49,6 +49,10 @@ Parameter: Output Layer Activation Function
 
 From the Base Model before optimization is performed, we get the following results:
 
+Results:
+- Loss: 0.5493
+- Accuracy: 0.7360
+
 ![Before Optimization](https://user-images.githubusercontent.com/82673788/137605023-9c944f10-4e4a-4ddd-8ab9-7bb51eb7e14b.PNG)
 
 
