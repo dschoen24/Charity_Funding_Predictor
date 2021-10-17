@@ -50,10 +50,10 @@ Parameter: Output Layer Activation Function
 From the Base Model before optimization is performed, we get the following results:
 
 Results:
-- Loss: 0.549
-- Accuracy: 0.736
+- Loss: 0.549318253993988
+- Accuracy: 0.7359766960144043
 
-![Before Optimization](https://user-images.githubusercontent.com/82673788/137605023-9c944f10-4e4a-4ddd-8ab9-7bb51eb7e14b.PNG)
+268/268 - 0s - loss: 0.5493 - accuracy: 0.7360
 
 
 Optimization was then performed on the base model by adjusting the parameters above.
@@ -63,31 +63,30 @@ Parameter: Training Duration (epochs)
 - Reasoning: Longer training time and could result in more trends learned
 
 Results:
-- Loss: 0.560
-- Accuracy: 0.728
+- Loss: 0.5604199767112732
+- Accuracy: 0.728863000869751
 
-![Increase Epochs Results](https://user-images.githubusercontent.com/82673788/137605092-a250db03-5cdf-4704-91fb-4513daf64881.PNG)
-
+268/268 - 0s - loss: 0.5604 - accuracy: 0.7289
 
 Parameter: Hidden Layer Activation Function
 - Change: Change from Relu to Tanh
 - Reasoning: Scaled data results in negative inputs which tanh does not output as zero
 
 Results:
-- Loss: 0.552
-- Accuracy: 0.728
+- Loss: 0.5528029799461365
+- Accuracy: 0.7285131216049194
 
-![Changing to Tanh Results](https://user-images.githubusercontent.com/82673788/137605160-c1c0fe33-d153-4fad-ba40-d21951e7db76.PNG)
+268/268 - 0s - loss: 0.5528 - accuracy: 0.7285
 
 Parameter: Number of Input Features
 - Change: Reduce from 43 to 34 by bucketing INCOME_AMT and AFFILIATION and dropping the redundant column SPECIAL_CONSIDERATIONS_N after encoding
 - Reasoning: Less noise in the input data
 
 Results:
-- Loss: 0.558
-- Accuracy: 0.726
+- Loss: 0.5582584738731384
+- Accuracy: 0.7261807322502136
 
-![Reducing Input Results Relu](https://user-images.githubusercontent.com/82673788/137605215-ed3a98b4-950e-4ab0-9ad1-08ae0c41af30.PNG)
+268/268 - 0s - loss: 0.5583 - accuracy: 0.7262
 
 ________________________________________________________________________________________________________________________________________________________________________
 
