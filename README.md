@@ -79,4 +79,14 @@ Results:
 
 ![Reducing Input Results Relu](https://user-images.githubusercontent.com/82673788/137605215-ed3a98b4-950e-4ab0-9ad1-08ae0c41af30.PNG)
 
+________________________________________________________________________________________________________________________________________________________________________
 
+## Summary
+
+In summary, the highest accuracy we achieved was 73% which was achieved with the base deep learning model and before optimization techniques were performed.  This did not meet our target of 75% accuracy and the optimization methods performed on the base deep learning model did not achieve significant improvement.
+
+#### Alternative Model
+
+An alternative to the deep learning model utalized for this project, one could use a Random Forest Classifier.  
+
+A Random Forest Classifier is also appropriate for this binary classification problem and can perform comparably to deep learning models with just two hidden layers.  It is beneficial in that there are fewer parameters to optimize and the parameters that aquire attention are more intuitive than those in a neural network.
