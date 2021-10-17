@@ -28,24 +28,24 @@ Once the data was preprocessed, a base model was built using Tensorflow.keras.mo
 Parameters Used:
 
 Parameter: Number of Hidden Layers
-Value: 2
-Reasoning: Deep neural network is neccessary for complex data and low computation time
+- Value: 2
+- Reasoning: Deep neural network is neccessary for complex data and low computation time
 
 Parameter: Architecture (hidden nodes 1, hidden nodes 2)
-Value: (80, 30)
-Reasoning: First layer has two times the number of inputs (43), smaller second layer gives us shorter computation time
+- Value: (80, 30)
+- Reasoning: First layer has two times the number of inputs (43), smaller second layer gives us shorter computation time
 
 Parameter: Hidden Layer Activation Function
-Value: Relu
-Reasoning: Inexpensive training with good performance
+- Value: Relu
+- Reasoning: Inexpensive training with good performance
 
 Parameter: Number of Output Nodes
-Value: 1
-Reasoning: Model is binary classifier and should have one output predicting if IS_SUCCESSFUL is True or False
+- Value: 1
+- Reasoning: Model is binary classifier and should have one output predicting if IS_SUCCESSFUL is True or False
 
 Parameter: Output Layer Activation Function
-Value: Sigmoid
-Reasoning: Provides a probability output (value between 0 and 1) for the classification of IS_SUCCESSFUL
+- Value: Sigmoid
+- Reasoning: Provides a probability output (value between 0 and 1) for the classification of IS_SUCCESSFUL
 
 From the Base Model before optimization is performed, we get the following results:
 
@@ -55,27 +55,33 @@ From the Base Model before optimization is performed, we get the following resul
 Optimization was then performed on the base model by adjusting the parameters above.
 
 Parameter: Training Duration (epochs)
-Change: Increase from 100 epochs to 200 epochs
-Reasoning: Longer training time and could result in more trends learned
+- Change: Increase from 100 epochs to 200 epochs
+- Reasoning: Longer training time and could result in more trends learned
 
 Results:
+- Loss: 0.5604
+- Accuracy: 0.7289
 
 ![Increase Epochs Results](https://user-images.githubusercontent.com/82673788/137605092-a250db03-5cdf-4704-91fb-4513daf64881.PNG)
 
 
 Parameter: Hidden Layer Activation Function
-Change: Change from Relu to Tanh
-Reasoning: Scaled data results in negative inputs which tanh does not output as zero
+- Change: Change from Relu to Tanh
+- Reasoning: Scaled data results in negative inputs which tanh does not output as zero
 
 Results:
+- Loss: 0.5528
+- Accuracy: 0.7285
 
 ![Changing to Tanh Results](https://user-images.githubusercontent.com/82673788/137605160-c1c0fe33-d153-4fad-ba40-d21951e7db76.PNG)
 
 Parameter: Number of Input Features
-Change: Reduce from 43 to 34 by bucketing INCOME_AMT and AFFILIATION and dropping the redundant column SPECIAL_CONSIDERATIONS_N after encoding
-Reasoning: Less noise in the input data
+- Change: Reduce from 43 to 34 by bucketing INCOME_AMT and AFFILIATION and dropping the redundant column SPECIAL_CONSIDERATIONS_N after encoding
+- Reasoning: Less noise in the input data
 
 Results:
+- Loss: 0.5583
+- Accuracy: 0.7262
 
 ![Reducing Input Results Relu](https://user-images.githubusercontent.com/82673788/137605215-ed3a98b4-950e-4ab0-9ad1-08ae0c41af30.PNG)
 
