@@ -56,6 +56,8 @@ Results:
 268/268 - 0s - loss: 0.5493 - accuracy: 0.7360
 
 
+### Optimization of the Model
+
 Optimization was then performed on the base model by adjusting the parameters above.
 
 Parameter: Training Duration (epochs)
