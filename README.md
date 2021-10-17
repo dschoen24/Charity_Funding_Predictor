@@ -50,8 +50,8 @@ Parameter: Output Layer Activation Function
 From the Base Model before optimization is performed, we get the following results:
 
 Results:
-- Loss: 0.5493
-- Accuracy: 0.7360
+- Loss: 0.549
+- Accuracy: 0.736
 
 ![Before Optimization](https://user-images.githubusercontent.com/82673788/137605023-9c944f10-4e4a-4ddd-8ab9-7bb51eb7e14b.PNG)
 
@@ -63,8 +63,8 @@ Parameter: Training Duration (epochs)
 - Reasoning: Longer training time and could result in more trends learned
 
 Results:
-- Loss: 0.5604
-- Accuracy: 0.7289
+- Loss: 0.560
+- Accuracy: 0.728
 
 ![Increase Epochs Results](https://user-images.githubusercontent.com/82673788/137605092-a250db03-5cdf-4704-91fb-4513daf64881.PNG)
 
@@ -74,8 +74,8 @@ Parameter: Hidden Layer Activation Function
 - Reasoning: Scaled data results in negative inputs which tanh does not output as zero
 
 Results:
-- Loss: 0.5528
-- Accuracy: 0.7285
+- Loss: 0.552
+- Accuracy: 0.728
 
 ![Changing to Tanh Results](https://user-images.githubusercontent.com/82673788/137605160-c1c0fe33-d153-4fad-ba40-d21951e7db76.PNG)
 
@@ -84,8 +84,8 @@ Parameter: Number of Input Features
 - Reasoning: Less noise in the input data
 
 Results:
-- Loss: 0.5583
-- Accuracy: 0.7262
+- Loss: 0.558
+- Accuracy: 0.726
 
 ![Reducing Input Results Relu](https://user-images.githubusercontent.com/82673788/137605215-ed3a98b4-950e-4ab0-9ad1-08ae0c41af30.PNG)
 
